@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">درس یار علوم نهم</string>
+    <string name="menu_books">خلاصه درس ها</string>
+    <string name="menu_home">خانه</string>
+    <string name="menu_info">درباره ما</string>
+    <string name="menu_person">اطلاعات کاربر</string>
+    <string name="menu_khordad">نمونه سوالات خرداد</string>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DarsYar Science Ninth</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+    <string name="nav_header_subtitle" translatable="false">prtdesign20789@gmail.com</string>
+    <string name="action_settings" translatable="false">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_person">User info</string>
+    <string name="menu_books">Lessons</string>
+    <string name="menu_info">Info</string>
+    <string name="menu_khordad">Khordad Question</string>
+</resources>
