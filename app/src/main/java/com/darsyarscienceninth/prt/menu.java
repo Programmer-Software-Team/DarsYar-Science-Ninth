@@ -33,14 +33,13 @@ import androidx.appcompat.widget.Toolbar;
 public class menu extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     String [] titles = {"درس اول","درس دوم","درس سوم","درس چهارم","درس پنجم","درس ششم","درس هفتم","درس هشتم","درس نهم","درس دهم","درس یازدهم","درس دوازدهم","درس سیزدهم","درس چهاردهم","درس پانزدهم"};
+    String [] titles2 = {"خلاصه درس اول","خلاصه درس دوم","خلاصه درس سوم","خلاصه درس چهارم","خلاصه درس پنجم","خلاصه درس ششم","خلاصه درس هفتم","خلاصه درس هشتم","خلاصه درس نهم","خلاصه درس دهم","خلاصه درس یازدهم","خلاصه درس دوازدهم","خلاصه درس سیزدهم","خلاصه درس چهاردهم","خلاصه درس پانردهم"};
+    String [] titles3 = {"","","","","","","","","",""};
     database dbm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        NightOwl.builder().create();
-        NightOwl.owlBeforeCreate(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-        NightOwl.owlAfterCreate(this);
         dbm = new database(this);
         ListView lv1 = (ListView)findViewById(R.id.listview1);
         ListView lv2 = (ListView)findViewById(R.id.listview2);
@@ -77,6 +76,8 @@ public class menu extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
         MyAdapter adapter = new MyAdapter(getApplication(),titles);
         lv1.setAdapter(adapter);
+        MyAdapter adapter2 = new MyAdapter(getApplication(),titles2);
+        lv2.setAdapter(adapter2);
     }
 
     class MyAdapter extends ArrayAdapter {
